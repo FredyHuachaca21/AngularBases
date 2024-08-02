@@ -7,18 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'mi primer componente';
-
-  contador: number = 0;
-
-  incrementarEnUno(): void {
-    this.contador++;
-  }
-
-  decrementarEnUno(): void {
-    this.contador--;
-  }
-
-  resetearContador(): void {
-    this.contador = 0;
-  }
 }
