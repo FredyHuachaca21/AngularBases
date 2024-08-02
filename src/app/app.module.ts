@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { CounterModule } from './counter/module/counter.module';
-import { DbzModule } from './dbz/module/dbz.module';
 
 import { AppComponent } from './app.component';
 import { HeroesModule } from './heroes/module/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
