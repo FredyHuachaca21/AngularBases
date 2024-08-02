@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  public title = 'mi primer componente';
+  title: string = 'mi primer componente';
+
+  contador: number = 0;
+
+  incrementarEnUno(): void {
+    this.contador++;
+  }
+
+  decrementarEnUno(): void {
+    this.contador--;
+  }
+
+  resetearContador(): void {
+    this.contador = 0;
+  }
 }
