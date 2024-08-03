@@ -7,7 +7,12 @@
   let isFirst = first;
   let isLast = last;
   "
-  class="list-group-item">
+  class="list-group-item"
+  [ngClass]="{
+    'list-group-item-success': isEven,
+    'list-group-item-warning': isLast
+  }"
+  >
     <span> {{i + 1}} - </span>
     <span> {{character.name}} - </span>
     <strong>Power: </strong>

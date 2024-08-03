@@ -22,6 +22,18 @@ export class MainPageDbzComponent {
   }, {
     name: 'Gohan',
     power: 8500
-  }]
+  }, {
+    name: 'Piccolo',
+    power: 8000
+  }, {
+    name: 'Krillin',
+    power: 7500
+  }, {
+    name: 'Yamcha',
+    power: 7000
+  }, {
+    name: 'Tenshinhan',
+    power: 6500
+  }];
 
 }
