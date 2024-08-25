@@ -41,7 +41,7 @@ export class DbzService {
     power: 6500
   }];
 
-  onNewCharacter(character: Character): void {
+  addNewCharacter(character: Character): void {
     const newCharacter: Character = {
       id: uuid(),
       ...character
