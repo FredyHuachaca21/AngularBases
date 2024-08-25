@@ -36,9 +36,8 @@ export class MainPageDbzComponent {
     power: 6500
   }];
 
-  public onNewCharacter(character: Character): void {
-    console.log("MainPageDbzComponent");
-    console.log(character);
+  onNewCharacter(character: Character): void {
+    this.characters.push(character);
   }
 
 }
