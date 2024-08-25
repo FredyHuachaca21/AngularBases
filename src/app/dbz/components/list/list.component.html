@@ -7,15 +7,18 @@
   let isFirst = first;
   let isLast = last;
   "
-  class="list-group-item"
+  class="list-group-item d-flex justify-content-between align-items-center"
   [ngClass]="{
     'list-group-item-success': isEven,
     'list-group-item-warning': isLast
   }"
   >
-    <span> {{i + 1}} - </span>
-    <span> {{character.name}} - </span>
-    <strong>Power: </strong>
+    <div>
+      <span> {{i + 1}} - </span>
+      <span> {{character.name}} - </span>
+      <strong>Power: </strong>
     <span>{{character.power}}</span>
+    </div>
+    <button type="button" class="btn btn-danger" (click)="onDeletedCharacter(i)" >Borrar</button>
   </li>
 </ul>

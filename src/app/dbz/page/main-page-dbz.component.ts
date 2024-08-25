@@ -40,4 +40,7 @@ export class MainPageDbzComponent {
     this.characters.push(character);
   }
 
+  onDeleteCharacter(index: number): void {
+    this.characters.splice(index, 1);
+  }
 }
