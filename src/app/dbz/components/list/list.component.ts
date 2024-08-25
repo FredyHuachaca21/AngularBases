@@ -15,13 +15,13 @@ export class ListComponent {
   }]
 
   @Output()
-  public onDelete: EventEmitter<number> = new EventEmitter();
+  public onDelete: EventEmitter<string> = new EventEmitter();
 
 
-  onDeletedCharacter(index: number): void {
-    console.log('Deleted character', index);
 
-    this.onDelete.emit(index);
+  onDeleteCharacterById(id?: string): void {
+    if (!id) return;
+    this.onDelete.emit(id);
   }
 
 
