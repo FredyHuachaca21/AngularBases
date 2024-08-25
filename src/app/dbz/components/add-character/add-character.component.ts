@@ -8,6 +8,10 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class AddCharacterComponent {
 
-  public character: Character = { name: '', power: 0 };
+  public character: Character = {name: 'majin buu', power: 10};
+
+  emitCharacter(): void {
+    console.log(this.character);
+  }
 
 }
